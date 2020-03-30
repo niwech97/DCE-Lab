@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585593089064.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EA086FCD",
+    "lastKnownWriteTime" : 1585599904,
+    "last_content_update" : 1585599904208,
+    "path" : "~/R/DCE-Lab/1.LearningDesign.R",
+    "project_path" : "1.LearningDesign.R",
+    "properties" : {
+        "cursorPosition" : "102,0",
+        "notebook_format" : "pdf_document",
+        "scrollLine" : "77",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

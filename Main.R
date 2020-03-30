@@ -52,8 +52,8 @@ if(!require(readr)){
                    repos = c("http://www.bioconductor.org/packages/release/bioc",
                              "https://cran.rstudio.com/"),
                    dep = TRUE)
-  
 }
+
 
 if(!require(readr)){
   install.packages(
@@ -62,8 +62,6 @@ if(!require(readr)){
     repos = c("https://cran.rstudio.com/"),
     dep = TRUE)
 }
-
-
 
 if(!require(readr)){
   install.packages("readr")
@@ -84,7 +82,7 @@ library(support.CEs)
 library(survival)
 library(stats)
 library(mded)
-
+library(DoE.base)
 library(readr)
 library(ggplot2)
 library(dplyr)
@@ -119,10 +117,10 @@ path.d <- paste(working.dir,"/",output.folders[1],"/",sep="")
 path.l <- paste(working.dir,"/",output.folders[2], "/", sep="")
 
 # Path to 2.Pract.tech
-p.path <- paste(working.dir,"/",output.folders[3], "/", sep="")
+path.p <- paste(working.dir,"/",output.folders[3], "/", sep="")
 
 # Path to 3.Test.tech
-t.path <- paste(working.dir,"/",output.folders[4], "/", sep="")
+path.t <- paste(working.dir,"/",output.folders[4], "/", sep="")
 
 
 

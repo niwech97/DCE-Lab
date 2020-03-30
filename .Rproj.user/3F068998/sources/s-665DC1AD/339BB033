@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3574528840",
     "id" : "339BB033",
-    "lastKnownWriteTime" : 1585589198,
-    "last_content_update" : 1585589198282,
+    "lastKnownWriteTime" : 1585600023,
+    "last_content_update" : 1585600023366,
     "path" : "~/R/DCE-Lab/Main.R",
     "project_path" : "Main.R",
     "properties" : {
-        "cursorPosition" : "168,26",
-        "scrollLine" : "163"
+        "cursorPosition" : "124,0",
+        "scrollLine" : "110"
     },
     "read_only" : false,
     "read_only_alternatives" : [
