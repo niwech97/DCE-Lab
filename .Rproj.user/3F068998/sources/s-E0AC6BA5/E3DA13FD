@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585672317112.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1164276095",
+    "id" : "E3DA13FD",
+    "lastKnownWriteTime" : 1585679986,
+    "last_content_update" : 1585679986314,
+    "path" : "~/R/DCE-Lab/2.PracticingDesign.R",
+    "project_path" : "2.PracticingDesign.R",
+    "properties" : {
+        "cursorPosition" : "136,72",
+        "scrollLine" : "124",
+        "tempName" : "Untitled4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
