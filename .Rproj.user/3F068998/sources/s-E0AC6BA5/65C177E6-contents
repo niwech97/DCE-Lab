@@ -30,7 +30,7 @@
 #OMED design
 #mix and match method
 
-#Attempt 1                                                                        ------------------
+#Attempt 1                                                                       ------------------
 t.design<- rotation.design(
   attribute.names = list(
     Type of Professional Administering vaccination 
@@ -67,7 +67,7 @@ t.design
 #it may have messed up the format of the function. I will try below without the 
 #pretty formatting. 
 
-#Ugly attempt:                                                                       ------------------------
+#Ugly attempt:                                                                   ------------------------
 
 t.design2<- rotation.design(
   attribute.names = list(
@@ -95,7 +95,7 @@ t.design2
 #Perhaps it has to do with the length of the terms. I will try another pretty 
 #design but with shorter attribute and level names.
 
-#Pretty again but short attempt:                                                        -----------
+#Pretty again but short attempt:                                                 -----------
 
 
 t.design3<- rotation.design(
@@ -133,7 +133,7 @@ t.design3
 #I am going to try again but with a smaller set of attributes and levels and then 
 #I can see if I can build it up to where it should be. 
 
-#Shorter and less attempt:                                                      ------
+#Shorter and less attempt:                                                       ------
 
 t.design4<- rotation.design(
   attribute.names = list(
@@ -188,7 +188,7 @@ questionnaire(choice.experiment.design = t.design5)
 # I am a little worried that when I scale up that part might change... I  hope not!
 
 
-#Attempt to scale up to full size:                                                        --------
+#Attempt to scale up to full size:                                               --------
 
 t.design6<- rotation.design(
   attribute.names = list(
@@ -236,3 +236,6 @@ t.design6
 # I have #ed the code so you can run it if you want, but there is by no means a
 # necessity to do so. 
 
+
+
+#time to learn analysis!

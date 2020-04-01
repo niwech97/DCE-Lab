@@ -140,7 +140,11 @@ path.t <- paste(working.dir,"/",output.folders[4], "/", sep="")
 
 # In our working directory I created 4 pathways to different folders with 
 # specific outputs 
-
+#
+#           - 0. Data.sets -> the path to this folder is: path.d
+#                 (This folder contains the raw data used in our learning, 
+#                 practicing and testing techniques sections)
+#
 #           - 1. Learn.tech  -> the path to this folder is: path.l
 #                 (This folder contains the scripts and outputs I produced from 
 #                 learning the techniques)
@@ -152,10 +156,6 @@ path.t <- paste(working.dir,"/",output.folders[4], "/", sep="")
 #           - 3. Test.tech -> the path to this folder is: path.t
 #                 (This folder contains the outputs I produced from our real 
 #                 dataset)
-#
-#           - 0. Data.sets -> the path to this folder is: path.d
-#                 (This folder contains the raw data used in our learning, 
-#                 practicing and testing techniques sections)
 
 #-----------Source the other scripts----------- 
 
