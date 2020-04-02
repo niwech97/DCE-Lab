@@ -75,8 +75,10 @@ cl<-clogit(fm,data = ds)
 
 
 
-fm <- RES ~ASC +x2 + x3+y2 + y3+Z+ strata(STR) 
+fm <- RES ~ASC +X2 + X3+Y2 + Y3+Z+ strata(STR)
 cl <- clogit(fm, data = ds)
-
+fm
   clogit(fm, data = ds)
   
+str(fm)
+str(ds)
