@@ -60,48 +60,6 @@ q.rd<-questionnaire(choice.experiment.design = rd)
 # edited in a word processor to make a distributable questionnaire.
 
 
-#---------------------------Creating a Matrix--------------------------------
-# It may not seem important to be able to turn this design into a matrix, but by
-# trasforming the design into a matrix, we can perform Conditional Logit Analysis
-# or Binomial Logit Analysis. 
-
-# an important note is that this function can account for continuos or 
-# categorical cariables as well as account for opt out options and more
-
-# With that in mind lets create a matrix such that:
-# We use rd (created above)
-# an opt out option is present and visible
-# Each alternative has 3 attributes, X and Y are categorical and Z is continuous
-
-dm.rd<-make.design.matrix(
-  choice.experiment.design = rd,
-  optout=TRUE,
-  categorical.attributes = c("X","Y"),
-  continuous.attributes = c("Z"),
-  unlabeled = TRUE,
-  common = NULL,
-  binary = FALSE)
-
-dm.rd
-
-# This matrix shows the order of the questions/options including an opt out option every 
-# 3rd line. 
-# The first 3 columns like previously refer to the block#, question#,
-# and option# with 3 being the opt out choice. 
-# 
-# The next four columns are binary.
-# ASC refers to whether it is an alternative or the opt out option. X2 and X3 
-# refer to the possible levels existing in attribute X for that treatment, a 0 
-# in both X2 and X3 means X1 (a nonexistant column that would have referred to
-# the first level in attribute X) would have a 1. The same for Y2 and Y3. 
-# 
-# Z is the last column and as this is our continuous variable, the number 
-# refers to the value of the variable. 
-
-# Again this matrix is not used in design as much as it is in the analysis, but 
-# you must be able to design the matrix in order to apply the CL or BL analysis.
-
-
 #----------------------------Alternative Design------------------------------------------------------------------
 # In addition to the mix and match (rotational) design that was used in my
 # first attempt at creating a choice set, there is another design known as LMA 

@@ -95,21 +95,22 @@ p.questionnaire<- questionnaire(choice.experiment.design = p.design)
 
 
 
+#(#ed out because didn't end up working)
 
-p.design2<- rotation.design(
-  attribute.names = list(
-    COST(USD)= c("0.3","0.5","60","100"), #in USD
-    MODALITY = c("pill","30 minute acupuncture massage"),
-    ONSET    = c("20 minutes","1-2 weeks"),
-    SESSION  = c("every 6 hours for 1-3 days","once a week for 4-10 weeks"),
-    DURATION = c("3-6 hours","up to 10 weeks"),
-    CULTURE  = c("active support","passive support","no support",
-                 "negative support")),
-  nalternatives = 2,
-  nblocks = 1,
-  seed= 3312020)
+#p.design2<- rotation.design(
+#  attribute.names = list(
+#    COST(USD)= c("0.3","0.5","60","100"), #in USD
+#    MODALITY = c("pill","30 minute acupuncture massage"),
+#    ONSET    = c("20 minutes","1-2 weeks"),
+#    SESSION  = c("every 6 hours for 1-3 days","once a week for 4-10 weeks"),
+#    DURATION = c("3-6 hours","up to 10 weeks"),
+#    CULTURE  = c("active support","passive support","no support",
+#                 "negative support")),
+#  nalternatives = 2,
+#  nblocks = 1,
+#  seed= 3312020)
 
-p.design2
+# p.design2
 
 # And here we have my first mistake! It appears that if I put USD in parens it 
 # treats COST as a function. I can see two potential simple solutions to this
@@ -118,21 +119,22 @@ p.design2
 
 # lets try to fix it in R using option 1 and see what happens
 
+#(#ed out because didn't end up working)
 
-p.design3<- rotation.design(
-  attribute.names = list(
-    COST"USD"= c("0.3","0.5","60","100"), #in USD
-    MODALITY = c("pill","30 minute acupuncture massage"),
-    ONSET    = c("20 minutes","1-2 weeks"),
-    SESSION  = c("every 6 hours for 1-3 days","once a week for 4-10 weeks"),
-    DURATION = c("3-6 hours","up to 10 weeks"),
-    CULTURE  = c("active support","passive support","no support",
-                 "negative support")),
-  nalternatives = 2,
-  nblocks = 1,
-  seed= 3312020)
-
-p.design3
+# p.design3<- rotation.design(
+#   attribute.names = list(
+#     COST"USD"= c("0.3","0.5","60","100"), #in USD
+#     MODALITY = c("pill","30 minute acupuncture massage"),
+#     ONSET    = c("20 minutes","1-2 weeks"),
+#     SESSION  = c("every 6 hours for 1-3 days","once a week for 4-10 weeks"),
+#     DURATION = c("3-6 hours","up to 10 weeks"),
+#     CULTURE  = c("active support","passive support","no support",
+#                  "negative support")),
+#   nalternatives = 2,
+#   nblocks = 1,
+#   seed= 3312020)
+# 
+# p.design3
 
 # Still didnt work, thats fine I am pleased with what we did get, and we can 
 # always fix it in a word processor after the fact before I send it out.

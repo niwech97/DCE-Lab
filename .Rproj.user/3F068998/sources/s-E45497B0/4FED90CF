@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1586193952241.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1067166062",
+    "id" : "4FED90CF",
+    "lastKnownWriteTime" : 1586194161,
+    "last_content_update" : 1586194161168,
+    "path" : "~/R/DCE-Lab/3.TestDesign.R",
+    "project_path" : "3.TestDesign.R",
+    "properties" : {
+        "cursorPosition" : "245,24",
+        "scrollLine" : "229",
+        "tempName" : "Untitled6"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
