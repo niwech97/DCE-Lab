@@ -129,7 +129,7 @@ ds[1:10,]
 # right side is all of the independent variables that the dependent variable is 
 # being analyzed against. (I explain the arguements below)
 
-fm <- RES ~ASC +x2 + x3+y2 + y3+Z+ strata(STR)
+fm <- RES ~ASC +X2 + X3+Y2 + Y3+Z+ strata(STR)
 
 #setting the cl
 # this is just done to store the results in an object
@@ -152,14 +152,24 @@ cl
 cl
 # Lets break down the readout from cl: there are 6 columns, the first column is
 # the attribute or level the second column is the estimated coefficient value as
-# given by the formula the thir column is the exponential function of the
-# estimated coeffecient fourth is the standard error of the estimated
+# given by the formula, the third column is the exponential function of the
+# estimated coeffecient, the fourth is the standard error of the estimated
 # coefficient the last two are the z scores and p scores of the estimation under
 # the null hypothesis
 
 # Keep in mind in the README these estimated coefficients are sometimes called
 # Dummy Variables. It is just a placeholder until the coefficient can be
 # estimated
+
+# What does any of that mean in terms of RUT?:
+# Well, the clogit function only returns the estimatated coefficients of the 
+# random component of RUT, but it does still say something about the systematic
+# component. A positive value (of the estimated coefficient) of an independent 
+# variable means that an increase in the value of that variable in an alternative
+# also increases the systematic components utility for the alternative. ie. X2
+# has a positive estimated coefficient, if in another alternative X2 is deemed 
+# more valuable, there will be a similarly positive increase to the systematic 
+# components utility for the alternative. 
 
 # apparently there is more that is done in this function but it only spits out 
 # this summary. Additionally, we can pull out a variance matrix that can tell us 
@@ -169,12 +179,21 @@ cl
 cl$var
 
 
-# after creating these estimated coeffecients, we can performa a goodness of fit 
+# after creating these estimated coeffecients, we can perform a goodness of fit 
 # test using the gofm()function.
 gofm(cl)
 
+# At first I was very confused as to what exactly we are fitting to this data,
+# but now I understand that we are assuming a normal distribution. By testing a
+# goodness of fit of our data to a normal distribution, we will be able to see
+# how close or far from that normal distribution, our data is.
+
 # This code spits out a ton of statistics information that I do not yet understand
 # It seems there are definitions in earlier chapters that I'll go back to read
+
+# Essentially this code takes the estimated model that we created (cl), and 
+# evaluates the statistical significance of it using both logistic regression 
+# and likelihood ratios. 
 
 
 # next in the analysis we can find a willingness to pay metric for each variable
