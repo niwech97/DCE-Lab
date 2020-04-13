@@ -214,9 +214,9 @@ mwtp.cl
 # now, even though I could go farther, I dont think it will help me until I 
 # have a better understanding of these measures and methods. 
 
-# Now that I have a better understanding, this MWTP (measure for willingness to pay),
-# is a metric on its own that gives insight into the value that individuals are 
-# placing on specific levels. 
+# Now that I have a better understanding, this MWTP (measure for willingness to
+# pay), is a metric on its own that gives insight into the monetary value that
+# individuals are placing on specific levels.
 
 # To test the difference between MWTP of two levels we can use the mded function
 
@@ -227,3 +227,7 @@ mded.cl <- mded(distr1 = MWTP_x3, distr2 = MWTP_x2)
 
 
 mded.cl 
+
+
+
+
