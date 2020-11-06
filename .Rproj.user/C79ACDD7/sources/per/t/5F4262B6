@@ -1,0 +1,24 @@
+{
+    "id": "5F4262B6",
+    "path": "~/keystone work/R/DCE-Lab/Main.R",
+    "project_path": "Main.R",
+    "type": "r_source",
+    "hash": "967466039",
+    "contents": "",
+    "dirty": false,
+    "created": 1604685004718.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "77,37",
+        "scrollLine": "65"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1604685612,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1604685612513,
+    "read_only": false,
+    "read_only_alternatives": []
+}
